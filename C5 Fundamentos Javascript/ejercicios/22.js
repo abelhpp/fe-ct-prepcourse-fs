@@ -5,6 +5,10 @@ function divide(x, y) {
   // 10, 5 ---> 2
   // 5, 5 ---> 1
   // Tu código:
+  if(y==0){
+    return 0;
+  }
+  return x / y;
 }
 
 module.exports = divide;

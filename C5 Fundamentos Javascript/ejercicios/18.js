@@ -8,6 +8,25 @@ function esVocal(letra) {
   // "n" ---> "Dato incorrecto"
   // "texto largo" ---> "Dato incorrecto"
   // Tu código:
+  // Array que contiene todas las vocales en minúscula
+  var vocales = ['a', 'e', 'i', 'o', 'u'];
+
+  // Convertimos la letra a minúscula para simplificar la comparación
+  letra = letra.toLowerCase();
+
+  // Variable para almacenar el resultado
+  var resultado = "Dato incorrecto";
+
+  // Recorremos el array de vocales utilizando forEach
+  vocales.forEach(function(vocal) {
+    // Verificamos si la letra coincide con alguna vocal del array
+    if (letra === vocal) {
+      resultado = "Es vocal"; // Si coincide, actualizamos el resultado
+    }
+  });
+
+  // Devolvemos el resultado
+  return resultado;
 }
 
 module.exports = esVocal;
