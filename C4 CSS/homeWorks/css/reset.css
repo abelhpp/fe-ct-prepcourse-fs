@@ -1,0 +1,85 @@
+/* Reset CSS */
+
+/* Box-sizing border-box para todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Quitar margen y relleno */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Establecer tamaño de fuente base y estilo */
+html {
+  font-size: 62.5%; /* Establece 1rem como 10px */
+}
+
+body {
+  background-color: #030303ef;
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.6; /* 1.6 veces el tamaño de la fuente */
+  font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+}
+
+/* Quitar decoración de enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Establecer bordes en imágenes como inline */
+img {
+  display: inline-block;
+  border-style: none;
+}
+
+/* Quitar lista de estilos */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Quitar decoración de botones */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Quitar estilos para elementos de formulario */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Quitar decoración de tabla */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
